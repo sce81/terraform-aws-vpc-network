@@ -8,7 +8,7 @@ resource "aws_vpc" "main" {
   tags = merge(
     local.common_tags, var.extra_tags,
     tomap({
-      Name = "${var.name}-${var.env}-vpc"
+      Name = "${var.name}-${var.env}-vpc-hello-world"
     })
   )
 
